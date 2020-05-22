@@ -1,5 +1,4 @@
 {
-  "automerge": false,
   "ignorePaths": ["**/node_modules/**"],
   "ignoreUnstable": true,
   "labels": ["Renovate"],
@@ -9,7 +8,6 @@
   "prCreation": "immediate",
   "reviewers": ["dhedgecock"],
   "schedule": ["before 3am on Wednesday"],
-  "updateNotScheduled": true,
 
   "packageRules": [
     {
@@ -18,14 +16,14 @@
       "commitMessageAction": "Update",
       "commitMessageTopic": "project {{depName}}",
       "commitMessageSuffix": " 🆙",
-      "groupName": "dev dependencies",
+      "groupName": "devDependencies",
       "automerge": true
     },
     {
       "depTypeList": ["dependencies"],
       "commitMessagePrefix": "Update: ",
-      "commitMessageAction": "Project",
-      "commitMessageTopic": "{{depName}} upgrades",
+      "commitMessageAction": "",
+      "commitMessageTopic": "Project {{depName}}",
       "commitMessageSuffix": " 🆙",
       "groupName": "dependencies",
       "automerge": false

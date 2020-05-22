@@ -1,34 +1,29 @@
 {
-  "automerge": false,
   "ignorePaths": ["**/node_modules/**"],
   "ignoreUnstable": true,
   "labels": ["Renovate"],
-  "lockFileMaintenance": {
-    "enabled": false
-  },
   "masterIssue": true,
   "masterIssueTitle": "Renovate Bot - Dependencies Management",
   "rangeStrategy": "auto",
-  "schedule": ["before 3am on Monday"],
   "prCreation": "immediate",
   "reviewers": ["dhedgecock"],
-  "updateNotScheduled": true,
+  "schedule": ["before 3am on Wednesday"],
 
   "packageRules": [
     {
-      "packagePatterns": ["devDependencies"],
+      "depTypeList": ["devDependencies"],
       "commitMessagePrefix": "Chore: ",
       "commitMessageAction": "Update",
       "commitMessageTopic": "library {{depName}}",
       "commitMessageSuffix": " 🆙",
-      "groupName": "dev dependencies",
+      "groupName": "devDependencies",
       "automerge": true
     },
     {
       "depTypeList": ["dependencies"],
       "commitMessagePrefix": "Update: ",
-      "commitMessageAction": "Library",
-      "commitMessageTopic": "{{depName}} upgrades",
+      "commitMessageAction": "",
+      "commitMessageTopic": "Library {{depName}}",
       "commitMessageSuffix": " 🆙",
       "groupName": "dependencies",
       "automerge": false
