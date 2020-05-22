@@ -14,7 +14,7 @@
       "depTypeList": ["devDependencies"],
       "commitMessagePrefix": "Chore: ",
       "commitMessageAction": "Update",
-      "commitMessageTopic": "library {{depName}}",
+      "commitMessageTopic": "package {{depName}}",
       "commitMessageSuffix": " 🆙",
       "groupName": "devDependencies",
       "automerge": true
@@ -23,7 +23,7 @@
       "depTypeList": ["dependencies"],
       "commitMessagePrefix": "Update: ",
       "commitMessageAction": "",
-      "commitMessageTopic": "Library {{depName}}",
+      "commitMessageTopic": "Package {{depName}}",
       "commitMessageSuffix": " 🆙",
       "groupName": "dependencies",
       "automerge": false
