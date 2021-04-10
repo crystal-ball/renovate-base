@@ -7,7 +7,7 @@
   "rangeStrategy": "auto",
   "prCreation": "immediate",
   "reviewers": ["dhedgecock"],
-  "schedule": ["before 3am on Wednesday"],
+  "schedule": ["before 3am on the first day of the month"],
 
   "packageRules": [
     {
